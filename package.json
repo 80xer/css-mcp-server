@@ -1,17 +1,19 @@
 {
-  "name": "css-tutor",
+  "name": "care-partner-helper",
   "version": "1.0.0",
-  "description": "",
+  "description": "케어파트너를 위한 MCP 도우미 서버",
   "type": "module",
-  "main": "index.js",
+  "main": "build/index.js",
   "bin": {
-    "weather": "./build/index.js"
+    "css-tutor": "build/index.js"
   },
   "files": [
     "build"
   ],
   "scripts": {
-    "build": "tsc && chmod 755 build/index.js"
+    "build": "tsc && chmod 755 build/index.js",
+    "start": "node build/index.js",
+    "dev": "export PATH=\"/Users/80xer/.local/state/fnm_multishells/55391_1747580069522/bin:$PATH\" && node build/index.js"
   },
   "keywords": [],
   "author": "",
